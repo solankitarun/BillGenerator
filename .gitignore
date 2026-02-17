@@ -1,3 +1,35 @@
-/index.html
-/script.js
-/styles.css
+# Node.js
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.production.local
+**/.env*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Production / Build
+dist/
+dist-ssr/
+*.local
+
+# Application Specific
+server/uploads/*
+!server/uploads/.gitkeep
+server/.wwebjs_auth/
+server/.wwebjs_cache/
+
+# Legacy / Static files
+index.html
+script.js
+styles.css
