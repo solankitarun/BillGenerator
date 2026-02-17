@@ -75,6 +75,17 @@ connectDB();
 
 // --- ROUTES ---
 
+// 0. Root Route (Health Check)
+app.get('/', (req, res) => {
+    res.send(`
+        <div style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+            <h1 style="color: #4CAF50;">✅ Server is Connected</h1>
+            <p>Laundry Bill Generator API is running successfully.</p>
+            <p>Local Time: ${new Date().toLocaleString()}</p>
+        </div>
+    `);
+});
+
 // 1. Get Shop Details
 app.get('/api/shop', async (req, res) => {
     try {
