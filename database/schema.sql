@@ -28,10 +28,13 @@ CREATE TABLE Bills (
     InvoiceNumber NVARCHAR(50) UNIQUE NOT NULL,
     CustomerName NVARCHAR(100),
     CustomerPhone NVARCHAR(20),
+    CustomerTown NVARCHAR(100) NULL,
     BillDate DATETIME DEFAULT GETDATE(),
+    ReturnDate DATETIME NULL,
     SubTotal DECIMAL(10, 2),
     TaxAmount DECIMAL(10, 2),
-    GrandTotal DECIMAL(10, 2)
+    GrandTotal DECIMAL(10, 2),
+    PaymentStatus NVARCHAR(20) DEFAULT 'Pending'
 );
 
 -- 4. BillItems - Line items for each bill
@@ -42,6 +45,14 @@ CREATE TABLE BillItems (
     Quantity INT NOT NULL,
     UnitPrice DECIMAL(10, 2) NOT NULL,
     TotalPrice DECIMAL(10, 2) NOT NULL
+);
+
+-- 5. Users - Authentication
+CREATE TABLE Users (
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    Username NVARCHAR(50) UNIQUE NOT NULL,
+    Password NVARCHAR(255) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
 );
 
 -- SEED DATA -----------------------------------------------------------
@@ -58,3 +69,7 @@ INSERT INTO LaundryItemMaster (ItemName, DefaultPrice) VALUES
 ('Dress', 12.00),
 ('Jacket', 10.00),
 ('Bed Sheet', 8.00);
+
+-- Seed Users (Password: admin123 - hashed version should be used in production)
+INSERT INTO Users (Username, Password) 
+VALUES ('admin', '$2a$10$76.24LpI/wYvYq78iG7q5u7M7XpYv.GjS2pS7XpYv.GjS2pS7XpYv'); -- Example hash
