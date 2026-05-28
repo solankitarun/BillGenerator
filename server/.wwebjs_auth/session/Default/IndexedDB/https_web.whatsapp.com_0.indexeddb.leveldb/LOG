@@ -1,0 +1,16 @@
+2026/02/08-01:16:14.781 4ba0 Reusing MANIFEST D:\Code\Google Antigravity\BillGenerator\server\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/08-01:16:14.782 4ba0 Recovering log #305
+2026/02/08-01:16:15.018 4ba0 Reusing old log D:\Code\Google Antigravity\BillGenerator\server\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000305.log 
+2026/02/08-01:16:24.388 4ba0 Level-0 table #316: started
+2026/02/08-01:16:24.613 4ba0 Level-0 table #316: 1190613 bytes OK
+2026/02/08-01:16:24.674 4ba0 Delete type=0 #305
+2026/02/08-01:16:24.740 2b38 Compacting 1@1 + 7@2 files
+2026/02/08-01:16:25.841 2b38 Generated table #317@1: 71212 keys, 2213872 bytes
+2026/02/08-01:16:26.327 2b38 Generated table #318@1: 48950 keys, 2211640 bytes
+2026/02/08-01:16:26.927 2b38 Generated table #319@1: 55934 keys, 2221033 bytes
+2026/02/08-01:16:28.274 2b38 Generated table #320@1: 2183 keys, 2154966 bytes
+2026/02/08-01:16:28.525 2b38 Generated table #321@1: 2110 keys, 2142411 bytes
+2026/02/08-01:16:29.193 2b38 Generated table #322@1: 26692 keys, 2233895 bytes
+2026/02/08-01:16:30.059 2b38 Generated table #323@1: 30411 keys, 1711716 bytes
+2026/02/08-01:16:30.060 2b38 Compacted 1@1 + 7@2 files => 14889533 bytes
+2026/02/08-01:16:30.448 2b38 compacted to: files[ 0 0 7 0 0 0 0 ]

@@ -1,0 +1,28 @@
+(node:13436) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ConnectionError: Connection is closed.
+    at Request._query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\base\request.js:497:37)
+    at Request._query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\tedious\request.js:363:11)
+    at D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\base\request.js:460:12)
+    at Object.query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\global-connection.js:143:78)
+    at D:\Code\Google Antigravity\BillGenerator\server\index.js:31:34
+    at Layer.handle [as handle_request] (D:\Code\Google Antigravity\BillGenerator\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Code\Google Antigravity\BillGenerator\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Code\Google Antigravity\BillGenerator\server\node_modules\express\lib\router\route.js:119:3) {
+  code: 'ECONNCLOSED'
+}
+ConnectionError: Connection is closed.
+    at Request._query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\base\request.js:497:37)
+    at Request._query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\tedious\request.js:363:11)
+    at D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\base\request.js:460:12)
+    at Object.query (D:\Code\Google Antigravity\BillGenerator\server\node_modules\mssql\lib\global-connection.js:143:78)
+    at D:\Code\Google Antigravity\BillGenerator\server\index.js:192:34
+    at Layer.handle [as handle_request] (D:\Code\Google Antigravity\BillGenerator\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Code\Google Antigravity\BillGenerator\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Code\Google Antigravity\BillGenerator\server\node_modules\express\lib\router\route.js:119:3) {
+  code: 'ECONNCLOSED'
+}
